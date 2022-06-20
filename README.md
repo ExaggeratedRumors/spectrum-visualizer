@@ -1,4 +1,4 @@
-# balance-tester-kit
+# Balance Tester Kit
 
 New version of Dev-Simulator based on Jetpack Compose on desktop. 
 
