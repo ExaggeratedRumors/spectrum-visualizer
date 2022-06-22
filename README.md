@@ -1,3 +1,3 @@
-# Distribution visualizer 
+# Spectrum visualizer 
 
-Simple App to visualize common probability distribution with predefined parameters
+Simple App to visualize spectrum frequency with predefined parameters
