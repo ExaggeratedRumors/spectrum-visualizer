@@ -8,7 +8,7 @@ import kotlin.concurrent.thread
 
 class RecordingRoutine (
     activity: MainActivity,
-    components: ViewContainer
+    val components: ViewContainer
 ) {
     private val handler = RecordingHandler(activity, components)
     private val recorder = AudioRecorder(activity)
@@ -34,7 +34,7 @@ class RecordingRoutine (
                 .convertToComplex()
                 .fft()
                 .divideToThirds()
-            handler.dataChangeNotification(getDbSignalForm(data, State.A_WEIGHTING))
+            handler.dataChangeNotification(getDbSignalForm(data, components.weightingState.get()))
         }
     }
 }
